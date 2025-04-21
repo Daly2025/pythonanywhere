@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miel Pura - La mejor miel natural</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Miel Pura</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Beneficios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Descubre la dulzura de la miel 100% natural</h2>
+            <p>Ofrecemos miel pura, recolectada con métodos tradicionales.</p>
+            <a href="#" class="btn">Ver Productos</a>
+        </section>
+
+        <section class="productos">
+            <h2>Nuestros productos</h2>
+            <div class="producto">
+                <img src="{% static 'img/mielflores.jpg' %}" alt="Miel de flores">
+                <h3>Miel de Flores</h3>
+                <p>Un sabor suave y aromático.</p>
+            </div>
+            <div class="producto">
+                <img src="{% static 'img/mielbosque.jpg' %}" alt="Miel de bosque">
+                <h3>Miel de Bosque</h3>
+                <p>Rica en antioxidantes, ideal para la salud.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Miel Pura - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
+
+
