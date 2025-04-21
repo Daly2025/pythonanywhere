@@ -3,25 +3,22 @@
 
 {% block content %}
     <main>
-        <section class="hero">
-            <h2>Descubre la dulzura de la miel 100% natural</h2>
-            <a href="{% url 'productos' %}" class="btn">Ver Productos</a>
-        </section>
-
-        <section class="productos">
-            <div class="productos-container">
+        <section class="productos-page">
+            <h2>Nuestra Selección de Mieles</h2>
+            <div class="productos-grid">
                 <div class="producto">
                     <img src="{% static 'app1/img/flor.jpeg' %}" alt="Miel de flores">
                     <h3>Miel de Flores</h3>
                     <p>Un sabor suave y aromático.</p>
+                    <p class="precio">$10.99</p>
                 </div>
                 <div class="producto">
                     <img src="{% static 'app1/img/miel.jpeg' %}" alt="Miel de bosque">
                     <h3>Miel de Bosque</h3>
                     <p>Rica en antioxidantes, ideal para la salud.</p>
+                    <p class="precio">$12.99</p>
                 </div>
             </div>
-            <a href="{% url 'productos' %}" class="btn-productos">Ver Productos</a>
         </section>
     </main>
 {% endblock %}

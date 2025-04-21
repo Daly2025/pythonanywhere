@@ -4,24 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Miel Pura - La mejor miel natural{% endblock %}</title>
+    <title>{% block title %}Miel Pura{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Miel Pura</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Beneficios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    {% block content %}{% endblock %}
-    <footer>
-        <p>&copy; 2025 Miel Pura - Todos los derechos reservados</p>
-    </footer>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
