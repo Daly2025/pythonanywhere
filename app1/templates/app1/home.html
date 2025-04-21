@@ -1,0 +1,26 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <section class="hero">
+            <h2>Descubre la dulzura de la miel 100% natural</h2>
+            <p>Ofrecemos miel pura, recolectada con métodos tradicionales.</p>
+            <a href="#" class="btn">Ver Productos</a>
+        </section>
+
+        <section class="productos">
+            <h2>Nuestros productos</h2>
+            <div class="producto">
+                <img src="{% static 'app1/img/miel.jpg' %}" alt="Miel de flores">
+                <h3>Miel de Flores</h3>
+                <p>Un sabor suave y aromático.</p>
+            </div>
+            <div class="producto">
+                <img src="{% static 'app1/img/flor.jpg' %}" alt="Miel de bosque">
+                <h3>Miel de Bosque</h3>
+                <p>Rica en antioxidantes, ideal para la salud.</p>
+            </div>
+        </section>
+    </main>
+{% endblock %}
