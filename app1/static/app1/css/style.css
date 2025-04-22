@@ -66,22 +66,29 @@ body {
 }
 
 .hero h2 {
-    font-size: 3.5em;  /* Increased from 2.8em */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cambia la fuente a Comic Sans */
+    text-align: center; /* Centra el texto */
+    font-size: 3.5em; /* Tamaño grande */
     margin-bottom: 25px;
     color: #333;
-    font-weight: 800;  /* Extra bold */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);  /* Subtle shadow for better readability */
+    font-weight: 800; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para mejor legibilidad */
 }
 
 .productos-page {
+    background-image: url("../../app1/img/fondoproductos.jpeg");
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
+}   
+
 
 .productos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 30px;
     padding: 20px;
 }

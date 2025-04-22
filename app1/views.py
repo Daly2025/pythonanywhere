@@ -5,3 +5,2229 @@ def home(request):
 
 def productos(request):
     return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')
+
+def contacto_view(request):
+    return render(request, 'app1/contacto.html')
+
+def productos(request):
+    return render(request, 'app1/productos.html')

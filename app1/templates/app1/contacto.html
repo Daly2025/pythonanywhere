@@ -1,0 +1,32 @@
+{% block content %}
+    <section id="contacto" class="contacto-page">
+        <h2>Formulario de Contacto</h2>
+        <form action="/enviar_contacto" method="post">
+            {% csrf_token %}
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="numero_botes">Número de Botes:</label>
+            <input type="number" id="numero_botes" name="numero_botes" required>
+
+            <label for="tipo_miel">Tipo de Miel:</label>
+            <select id="tipo_miel" name="tipo_miel" required>
+                <option value="flores">Miel de Flores</option>
+                <option value="bosque">Miel de Bosque</option>
+                <option value="romero">Miel de Romero</option>
+                <!-- Añadir más opciones según sea necesario -->
+            </select>
+
+            <button type="submit" class="btn-productos">Enviar</button>
+        </form>
+    </section>
+{% endblock %}
