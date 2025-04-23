@@ -3,8 +3,18 @@
 
 {% block content %}
 <div class="galeria-container">
-    <h2>Galería de Imágenes</h2>
+    <h2>Galería </h2>
     <div class="galeria-grid">
+        <!-- Video de YouTube -->
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/_5cpb_WqJXE" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
         <!-- Galería de colmenas -->
         <div class="galeria-item">
             <img src="{% static 'app1/img/colmena3.jpeg' %}" alt="Colmena 3">
@@ -57,35 +67,27 @@
 .galeria-item:hover img {
     transform: scale(1.05);
 }
+
+.video-container {
+    position: relative;
+    height: 300px; /* Misma altura que las imágenes */
+    border-radius: 10px;
+    border: 3px solid #000; /* Borde igual a las imágenes */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mismo ajuste que las imágenes */
+}
 </style>
 
 <div class="btn-volver-container">
     <a href="javascript:history.back()" class="btn-volver">Volver</a>
 </div>
 {% endblock %}
-
-<div class="galeria-grid">
-   
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena2.jpeg' %}" alt="Colmena 2">
-    </div>
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena3.jpeg' %}" alt="Colmena 3">
-    </div>
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena4.jpeg' %}" alt="Colmena 4">
-    </div>
-    <!-- Saltar colmena5 que no existe -->
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena6.jpeg' %}" alt="Colmena 6">
-    </div>
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena7.jpeg' %}" alt="Colmena 7">
-    </div>
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena8.jpeg' %}" alt="Colmena 8">
-    </div>
-</div>
 {% for i in 12345678|make_list %}
 <div class="galeria-item">
     <img src="{% static 'app1/img/colmena'|add:i|add:'.jpg' %}" alt="Colmena {{ i }}">
@@ -93,24 +95,34 @@
 {% endfor %}
 </div>
 <div class="galeria-grid">
-    <!-- Sección eliminada -->
-    
-    <!-- Galería de colmenas -->
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena3.jpeg' %}" alt="Colmena 3">
-    </div>
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena4.jpeg' %}" alt="Colmena 4">
-    </div>
-    <!-- Saltar colmena5 que no existe -->
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena6.jpeg' %}" alt="Colmena 6">
-    </div>
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena7.jpeg' %}" alt="Colmena 7">
-    </div>
-    <div class="galeria-item">
-        <img src="{% static 'app1/img/colmena8.jpeg' %}" alt="Colmena 8">
+    <div class="galeria-grid">
+        <!-- Video de YouTube -->
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/_5cpb_WqJXE" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <!-- Galería de colmenas -->
+        <div class="galeria-item">
+            <img src="{% static 'app1/img/colmena3.jpeg' %}" alt="Colmena 3">
+        </div>
+        <div class="galeria-item">
+            <img src="{% static 'app1/img/colmena4.jpeg' %}" alt="Colmena 4">
+        </div>
+        <!-- Saltar colmena5 que no existe -->
+        <div class="galeria-item">
+            <img src="{% static 'app1/img/colmena6.jpeg' %}" alt="Colmena 6">
+        </div>
+        <div class="galeria-item">
+            <img src="{% static 'app1/img/colmena7.jpeg' %}" alt="Colmena 7">
+        </div>
+        <div class="galeria-item">
+            <img src="{% static 'app1/img/colmena8.jpeg' %}" alt="Colmena 8">
+        </div>
     </div>
 </div>
 {% for i in 12345678|make_list %}
