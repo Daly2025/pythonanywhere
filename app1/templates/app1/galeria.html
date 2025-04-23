@@ -1,0 +1,42 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="galeria-container">
+    <h2>Galería de Imágenes</h2>
+    <div class="galeria-grid">
+        <!-- Aquí irán las imágenes de la galería -->
+    </div>
+</div>
+
+<style>
+.galeria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.galeria-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
+</style>
+{% endblock %}
