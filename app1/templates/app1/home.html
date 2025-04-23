@@ -5,7 +5,6 @@
     <main>
         <section class="hero">
             <h2>COLMENAR DO CASTELO</h2>
-           
         </section>
 
         <section class="productos">
@@ -17,7 +16,10 @@
                     <img src="{% static 'app1/img/miel.jpeg' %}" alt="Miel de bosque">
                 </div>
             </div>
-          
+            <div class="botones-container">
+                <a href="{% url 'productos' %}" class="btn-productos">Productos</a>
+                <a href="{% url 'contacto' %}" class="btn-productos">Contacto</a>
+            </div>
         </section>
     </main>
 {% endblock %}
