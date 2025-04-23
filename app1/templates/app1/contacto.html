@@ -5,7 +5,7 @@
 <div class="contacto-container">
     <div class="formulario-contacto">
         <h2>Contacto</h2>
-        <form method="post" onsubmit="mostrarMensajeCompra(event)">
+        <form method="post" onsubmit="mostrarMensajeGenerico(event)">
             {% csrf_token %}
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -29,10 +29,9 @@
 </div>
 
 <script>
-    function mostrarMensajeCompra(event) {
+    function mostrarMensajeGenerico(event) {
         event.preventDefault();
-        alert('¡Gracias por tu compra! Pronto recibirás un correo con los detalles.');
-        // Enviar el formulario y redirigir a productos
+        alert('Gracias por tu compra/consulta, en breves recibirás un correo con los detalles.');
         setTimeout(() => {
             window.location.href = "{% url 'productos' %}";
         }, 1000);
