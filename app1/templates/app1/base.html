@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Miel Pura{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <style>
+        .footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 1px solid #e7e7e7;
+        }
+
+        .empresa-info {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .empresa-info h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .empresa-info p {
+            color: #666;
+            margin: 0.5rem 0;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -14,6 +38,14 @@
     {% block content %}
        
     {% endblock %}
+    <footer class="footer">
+        <div class="empresa-info">
+            <h3>Colmenar do Castelo</h3>
+            <p>Carretera de Verín 22</p>
+            <p>32619 Verín, Ourense</p>
+            <p>Teléfono: 655 85 85 85</p>
+        </div>
+    </footer>
 </body>
 </html>
 
