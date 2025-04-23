@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
 </head>
 <body>
+    <nav>
+        <!-- Botón existente de productos -->
+        <a href="{% url 'productos' %}" class="btn-productos">Productos</a>
+        <!-- Botón de contacto con URL en lugar de ancla -->
+        <a href="{% url 'contacto' %}" class="btn-productos">Contacto</a>
+    </nav>
     {% block content %}
-        <nav>
-            <!-- Botón existente de productos -->
-            <a href="{% url 'productos' %}" class="btn-productos">Productos</a>
-            <!-- Nuevo botón de contacto -->
-            <a href="#contacto" class="btn-productos">Contacto</a>
-        </nav>
+       
     {% endblock %}
 </body>
 </html>
