@@ -5,7 +5,7 @@
 <div class="contacto-container">
     <div class="formulario-contacto">
         <h2>Contacto</h2>
-        <form method="post">
+        <form method="post" onsubmit="mostrarMensajeCompra(event)">
             {% csrf_token %}
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -27,4 +27,15 @@
         </form>
     </div>
 </div>
+
+<script>
+    function mostrarMensajeCompra(event) {
+        event.preventDefault();
+        alert('¡Gracias por tu compra! Pronto recibirás un correo con los detalles.');
+        // Enviar el formulario y redirigir a productos
+        setTimeout(() => {
+            window.location.href = "{% url 'productos' %}";
+        }, 1000);
+    }
+</script>
 {% endblock %}
