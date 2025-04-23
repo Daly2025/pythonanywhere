@@ -76,7 +76,7 @@ body {
 }
 
 .productos-page {
-    background-image: url("../../app1/img/fondoproductos.jpeg");
+    background-image: url("../../app1/img/fondonuevo.jpeg");
     background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -123,7 +123,7 @@ body {
 
 
 .contacto-container {
-    background-image: url('../img/fondo formulario.jpeg');
+    background-image: url('../img/fondo2.jpeg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -166,6 +166,13 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+    background-color: white;
+}
+
+.form-group input[type="number"]:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
 }
 
 .form-group textarea {
