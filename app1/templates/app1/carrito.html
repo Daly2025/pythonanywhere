@@ -8,7 +8,7 @@
     <div class="carrito-total">
         <h3>Total: <span id="total">0.00</span>€</h3>
         <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
-        <button class="btn-volver" onclick="window.location.href='{% url 'productos' %}';">Seguir Comprando</button>
+        <button class="btn-volver" onclick="volverAProductos()">Seguir Comprando</button>
     </div>
 </div>
 
@@ -100,5 +100,12 @@
 
     // Mostrar carrito al cargar la página
     document.addEventListener('DOMContentLoaded', mostrarCarrito);
+
+    function volverAProductos() {
+        // Asegurarse de que el carrito se mantenga en localStorage
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        window.location.href = "{% url 'productos' %}";
+    }
 </script>
 {% endblock %}
