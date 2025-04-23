@@ -89,9 +89,9 @@
                 alert('El carrito está vacío');
                 return;
             }
-            alert('¡Gracias por tu compra! Pronto recibirás un correo con los detalles.');
             localStorage.removeItem('carrito');
-            window.location.href = "{% url 'productos' %}";
+            // Redirigir al formulario de contacto en lugar de la página de productos
+            window.location.href = "{% url 'contacto' %}";
         } catch (error) {
             console.error('Error al finalizar compra:', error);
             alert('Hubo un error al procesar la compra');
