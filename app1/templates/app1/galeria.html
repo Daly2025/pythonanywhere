@@ -5,6 +5,8 @@
 <div class="galeria-container">
     <h2>Galería de Imágenes</h2>
     <div class="galeria-grid">
+        
+        </div>
         <!-- Aquí irán las imágenes de la galería -->
     </div>
 </div>
@@ -38,5 +40,25 @@
 .galeria-item:hover img {
     transform: scale(1.05);
 }
+
+.video-container {
+    position: relative;
+    padding-top: 56.25%; /* Relación 16:9 */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 </style>
+
+<div class="btn-volver-container">
+    <a href="javascript:history.back()" class="btn-volver">Volver</a>
+</div>
 {% endblock %}
