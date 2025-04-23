@@ -1,32 +1,26 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+
 {% block content %}
-    <section id="contacto" class="contacto-page">
-        <h2>Formulario de Contacto</h2>
-        <form action="/enviar_contacto" method="post">
+<div class="contacto-container">
+    <div class="formulario-contacto">
+        <h2>Contacto</h2>
+        <form method="post">
             {% csrf_token %}
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-
-            <label for="numero_botes">Número de Botes:</label>
-            <input type="number" id="numero_botes" name="numero_botes" required>
-
-            <label for="tipo_miel">Tipo de Miel:</label>
-            <select id="tipo_miel" name="tipo_miel" required>
-                <option value="flores">Miel de Flores</option>
-                <option value="bosque">Miel de Bosque</option>
-                <option value="romero">Miel de Romero</option>
-                <!-- Añadir más opciones según sea necesario -->
-            </select>
-
-            <button type="submit" class="btn-productos">Enviar</button>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar Mensaje</button>
         </form>
-    </section>
+    </div>
+</div>
 {% endblock %}
