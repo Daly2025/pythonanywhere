@@ -11,12 +11,24 @@
                     <h3>Miel de Flores</h3>
                     <p>Un sabor suave y aromático.</p>
                     <p class="precio">10.99€</p>
+                    <div class="producto-acciones">
+                        <input type="number" min="1" value="1" class="cantidad-input">
+                        <button class="btn-carrito" onclick="agregarAlCarrito('Miel de Flores', 10.99, this)">
+                            Añadir al Carrito
+                        </button>
+                    </div>
                 </div>
                 <div class="producto">
                     <img src="{% static 'app1/img/miel.jpeg' %}" alt="Miel de bosque">
                     <h3>Miel de Bosque</h3>
                     <p>Rica en antioxidantes, ideal para la salud.</p>
                     <p class="precio">12.99€</p>
+                    <div class="producto-acciones">
+                        <input type="number" min="1" value="1" class="cantidad-input">
+                        <button class="btn-carrito" onclick="agregarAlCarrito('Miel de Bosque', 12.99, this)">
+                            Añadir al Carrito
+                        </button>
+                    </div>
                 </div>
                 <div class="producto">
                     <img src="{% static 'app1/img/fresca.jpeg' %}" alt="Fresca">
@@ -69,4 +81,49 @@
             </div>
         </section>
     </main>
+
+    <!-- Icono del carrito flotante -->
+    <div class="carrito-icon" onclick="irAlCarrito()">
+        🛒 <span id="carrito-contador">0</span>
+    </div>
+
+    <!-- Scripts para el carrito -->
+    <script>
+        function agregarAlCarrito(nombre, precio, boton) {
+            const cantidad = parseInt(boton.parentElement.querySelector('.cantidad-input').value);
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            
+            // Verificar si el producto ya está en el carrito
+            const productoExistente = carrito.findIndex(item => item.nombre === nombre);
+            
+            if (productoExistente !== -1) {
+                carrito[productoExistente].cantidad += cantidad;
+            } else {
+                carrito.push({
+                    nombre: nombre,
+                    precio: precio,
+                    cantidad: cantidad
+                });
+            }
+            
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            actualizarContadorCarrito();
+            
+            // Mostrar mensaje de confirmación
+            alert('¡Producto añadido al carrito!');
+        }
+
+        function actualizarContadorCarrito() {
+            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
+            document.getElementById('carrito-contador').textContent = totalItems;
+        }
+
+        function irAlCarrito() {
+            window.location.href = "{% url 'carrito' %}";
+        }
+
+        // Actualizar contador al cargar la página
+        document.addEventListener('DOMContentLoaded', actualizarContadorCarrito);
+    </script>
 {% endblock %}

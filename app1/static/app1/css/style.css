@@ -195,3 +195,108 @@ body {
 .btn-submit:hover {
     background-color: #ffed4a;
 }
+
+
+/* Estilos para el carrito */
+.producto-acciones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.cantidad-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-carrito {
+    background-color: #FFD700;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrito-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.carrito-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.carrito-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.carrito-total {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.btn-finalizar {
+    background-color: #FFD700;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.carrito-vacio {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    padding: 20px;
+}
+
+.item-detalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-eliminar {
+    background-color: #ff4444;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-volver {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 15px;
+}

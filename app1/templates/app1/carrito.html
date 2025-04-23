@@ -1,0 +1,104 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="carrito-container">
+    <h2>Tu Carrito de Compra</h2>
+    <div id="carrito-items"></div>
+    <div class="carrito-total">
+        <h3>Total: <span id="total">0.00</span>€</h3>
+        <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        <button class="btn-volver" onclick="window.location.href='{% url 'productos' %}'">Seguir Comprando</button>
+    </div>
+</div>
+
+<script>
+    function mostrarCarrito() {
+        let carrito;
+        try {
+            carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        } catch (error) {
+            console.error('Error al cargar el carrito:', error);
+            carrito = [];
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+        }
+
+        const contenedor = document.getElementById('carrito-items');
+        let total = 0;
+        
+        contenedor.innerHTML = '';
+        
+        if (carrito.length === 0) {
+            contenedor.innerHTML = '<p class="carrito-vacio">Tu carrito está vacío</p>';
+            return;
+        }
+        
+        carrito.forEach((item, index) => {
+            const cantidad = Math.max(1, parseInt(item.cantidad) || 1);
+            const subtotal = item.precio * cantidad;
+            total += subtotal;
+            
+            contenedor.innerHTML += `
+                <div class="carrito-item">
+                    <h3>${item.nombre}</h3>
+                    <div class="item-detalles">
+                        <p>Cantidad: 
+                            <input type="number" min="1" value="${cantidad}" 
+                                onchange="actualizarCantidad(${index}, this.value)">
+                        </p>
+                        <p>Precio unitario: ${item.precio.toFixed(2)}€</p>
+                        <p>Subtotal: ${subtotal.toFixed(2)}€</p>
+                        <button class="btn-eliminar" onclick="eliminarItem(${index})">Eliminar</button>
+                    </div>
+                </div>
+            `;
+        });
+        
+        document.getElementById('total').textContent = total.toFixed(2);
+    }
+
+    function actualizarCantidad(index, nuevaCantidad) {
+        try {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            nuevaCantidad = Math.max(1, parseInt(nuevaCantidad) || 1);
+            carrito[index].cantidad = nuevaCantidad;
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            mostrarCarrito();
+        } catch (error) {
+            console.error('Error al actualizar cantidad:', error);
+            alert('Hubo un error al actualizar la cantidad');
+        }
+    }
+
+    function eliminarItem(index) {
+        try {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.splice(index, 1);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            mostrarCarrito();
+        } catch (error) {
+            console.error('Error al eliminar item:', error);
+            alert('Hubo un error al eliminar el producto');
+        }
+    }
+
+    function finalizarCompra() {
+        try {
+            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            if (carrito.length === 0) {
+                alert('El carrito está vacío');
+                return;
+            }
+            alert('¡Gracias por tu compra! Pronto recibirás un correo con los detalles.');
+            localStorage.removeItem('carrito');
+            window.location.href = "{% url 'productos' %}";
+        } catch (error) {
+            console.error('Error al finalizar compra:', error);
+            alert('Hubo un error al procesar la compra');
+        }
+    }
+
+    // Mostrar carrito al cargar la página
+    document.addEventListener('DOMContentLoaded', mostrarCarrito);
+</script>
+{% endblock %}

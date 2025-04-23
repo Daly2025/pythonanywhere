@@ -2231,3 +2231,5 @@ def contacto_view(request):
 
 def productos(request):
     return render(request, 'app1/productos.html')
+def carrito(request):
+    return render(request, 'app1/carrito.html')
