@@ -29,12 +29,34 @@
             color: #666;
             margin: 0.5rem 0;
         }
+
+        .btn-volver {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #ffd700;
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: {% if request.path != '/' %}block{% else %}none{% endif %};
+        }
+
+        .btn-volver:hover {
+            background-color: #ffed4a;
+        }
     </style>
 </head>
 <body>
     <nav>
         <!-- La navegación ahora está vacía -->
     </nav>
+    <a href="javascript:history.back()" class="btn-volver">Volver</a>
     {% block content %}
        
     {% endblock %}
