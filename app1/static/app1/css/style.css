@@ -1,2155 +1,550 @@
+/* Estilos Generales */
 body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('../../app1/img/fondo.jpeg');
-    background-size: 150px;  /* Smaller pattern size */
-    background-repeat: repeat;
+    background-image: url('../img/fondonuevo.jpeg'); /* Fondo general */
+    background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    width: 100%;
-    background-color: #fff8e7;  /* Light honey color as fallback */
-}
-
-.productos {
+    background-attachment: fixed; /* Fija el fondo al hacer scroll */
+    color: #333;
     display: flex;
-    flex-direction: column;  /* Changed to column to add button below */
-    align-items: center;
-    gap: 40px;
-    padding: 40px 20px;
-    margin: 0 auto;
-    max-width: 1200px;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el footer quede abajo */
 }
 
-.productos-container {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    width: 100%;
+main {
+    flex-grow: 1; /* Permite que el main crezca y empuje el footer */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo semi-transparente para el contenido */
+    margin: 20px auto; /* Centra el contenido principal */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.btn-productos {
-    background-color: #FFD700;
-    color: #000;
-    padding: 20px 50px;
-    border-radius: 30px;
-    font-weight: 800;
-    font-size: 1.3em;
+h2, h3 {
+    color: #8B4513; /* Marrón oscuro para títulos */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #DAA520; /* Dorado para enlaces */
     text-decoration: none;
-    display: inline-block;
-    margin-top: 40px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.btn-productos:hover {
-    background-color: #FFC000;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+a:hover {
+    text-decoration: underline;
 }
 
-.producto {
-    flex: 0 1 48%;  /* Más ancho que antes */
-    text-align: center;
-    padding: 20px; /* Reducción de padding */
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* Sombra más suave */
-    border: 3px solid #000;
-    margin: 10px;
-}
-
-.producto img {
-    width: 100%;
-    height: 300px; /* Reducción de altura */
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
-
-/* Ajustes para móviles */
-@media (max-width: 768px) {
-    .producto {
-        padding: 15px;
-    }
-    
-    .producto img {
-        height: 180px; /* Mayor reducción en móviles */
-    }
-    
-    .productos-grid {
-        gap: 10px; /* Menor espacio entre elementos */
-    }
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 0 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.productos-page .producto {
-    width: 100%;
-    max-width: 550px;
-    margin: 10px auto;
-    padding: 15px;
-}
-
-/* Responsive para móviles */
-@media (max-width: 768px) {
-    .productos-grid {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
-        gap: 15px;
-    }
-    
-    .productos-page .producto {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        padding: 10px;
-    }
-    
-    .productos-page .producto img {
-        height: 200px;
-    }
-    
-    .productos-page h2 {
-        font-size: 1.8em;
-        padding: 0 10px;
-        margin-bottom: 20px;
-    }
-    
-    .producto {
-        margin: 0 !important;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
+/* Estilos del Footer */
+.footer {
+    background-color: #8B4513; /* Marrón oscuro */
     color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-
-.productos-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* Diseño de 2 columnas como la galería */
-    gap: 40px;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Empuja el footer al final */
     width: 100%;
-    padding: 30px;
 }
 
 .footer-icons {
     display: flex;
-    justify-content: center; /* Centrado en lugar de espacio entre */
+    justify-content: center;
     align-items: center;
-    gap: 50px; /* Espacio reducido entre elementos */
-    padding: 20px;
+    gap: 50px;
 }
 
 .footer-icons img {
-    width: 120px;
+    width: 80px; /* Tamaño ajustado para los iconos */
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.empresa-info h3 {
+    color: #FFD700; /* Dorado */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.empresa-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Estilos Home (home.html) */
+.home-container .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 215, 0, 0.7); /* Fondo dorado semi-transparente */
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.home-container .hero h2 {
+    color: #8B4513;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.home-container .productos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home-container .producto img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin: 0 15px; /* Menos margen lateral */
+    border-radius: 8px;
+    border: 3px solid #8B4513;
+}
+
+/* Estilos Botones Principales (compartidos) */
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.btn-principal {
+    background-color: #ffd700; /* Dorado */
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-principal:hover {
+    background-color: #ffed4a; /* Dorado más claro */
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* Estilos Productos (productos.html) */
+.productos-page h2 {
+    margin-bottom: 30px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsive */
+    gap: 30px;
 }
 
 .producto {
-    flex: 0 1 48%;
-    padding: 12px; /* Reducción adicional de 20% */
-    margin: 5px; /* Margen más compacto */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea contenido */
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .producto img {
-    height: 260px; /* 7% menos que el anterior ajuste */
-    margin-bottom: 8px; /* Espaciado vertical reducido */
+    width: 100%;
+    height: 200px; /* Altura fija para imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
+.producto h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #8B4513;
+}
+
+.producto p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Permite que la descripción ocupe espacio */
+}
+
+.producto .precio {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #008000; /* Verde para el precio */
+    margin-bottom: 15px;
+}
+
+.producto-acciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Espacio antes de los botones/input */
+}
+
+.cantidad-input {
+    width: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn-carrito {
+    background-color: #DAA520; /* Dorado */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+.btn-carrito:hover {
+    background-color: #b8860b; /* Dorado oscuro */
+}
+
+/* Icono Carrito Flotante */
+.carrito-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #DAA520;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: transform 0.3s;
+}
+
+.carrito-icon:hover {
+    transform: scale(1.1);
+}
+
+#carrito-contador {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.6em;
+    vertical-align: top;
+    margin-left: -5px;
+}
+
+/* Estilos Galería (galeria.html) */
+/* (Los estilos inline en galeria.html se pueden mover aquí si se prefiere) */
+.galeria-container {
+    max-width: 1200px;
+    margin: 20px auto; /* Ajuste del margen */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente más opaco */
+    border-radius: 10px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Más adaptable */
+    gap: 20px; /* Espaciado ajustado */
+    padding: 0; /* Quitar padding extra si ya está en container */
+}
+
+.galeria-item, .video-container {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #8B4513; /* Borde marrón */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 0; /* Quitar padding interno si no es necesario */
+    background-color: #fff; /* Fondo blanco para cada item */
+}
+
+.galeria-item img, .video-container iframe {
+    display: block; /* Evita espacios extra debajo de la imagen/iframe */
+    width: 100%;
+    height: 300px; /* Altura ajustada */
+    object-fit: cover; /* Para imágenes */
+    border-radius: 7px; /* Redondeo interno ligero */
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.05); /* Efecto zoom al pasar el ratón */
+}
+
+/* Estilos Carrito (carrito.html) */
+.carrito-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#carrito-items {
+    margin-bottom: 30px;
+}
+
+.carrito-item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea al inicio verticalmente */
+    flex-wrap: wrap; /* Permite que los detalles se ajusten */
+}
+
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+.carrito-item h3 {
+    margin: 0 0 10px 0; /* Ajuste de margen */
+    flex-basis: 100%; /* Ocupa todo el ancho inicialmente */
+    text-align: left;
+    color: #8B4513;
+}
+
+.item-detalles {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    flex-grow: 1; /* Ocupa el espacio restante */
+}
+
+.item-detalles p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.item-detalles input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-eliminar {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+    margin-left: auto; /* Empuja el botón a la derecha */
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333; /* Rojo oscuro */
+}
+
+.carrito-total {
+    text-align: right;
+    margin-top: 20px;
+    border-top: 2px solid #8B4513;
+    padding-top: 20px;
+}
+
+.carrito-total h3 {
+    color: #333;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.carrito-total span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.carrito-vacio {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    padding: 30px 0;
+}
+
+/* Estilos Contacto (contacto.html) */
+.contacto-container {
+    background-image: url('../img/fondo formulario.jpeg'); /* Fondo específico para el formulario */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-contacto {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.formulario-contacto h2 {
+    color: #8B4513;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 100px;
+}
+
+/* Estilos Botones Comunes */
+.btn-submit, .btn-finalizar, .btn-volver {
+    background-color: #DAA520; /* Dorado */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    display: inline-block; /* Para que los botones de enlace se comporten bien */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.btn-submit:hover, .btn-finalizar:hover, .btn-volver:hover {
+    background-color: #b8860b; /* Dorado oscuro */
+    transform: scale(1.03);
+    text-decoration: none; /* Evita subrayado en hover para enlaces */
+    color: white;
+}
+
+.btn-volver {
+    background-color: #6c757d; /* Gris */
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+.btn-volver:hover {
+    background-color: #5a6268; /* Gris oscuro */
+}
+
+.btn-volver-container {
+    text-align: center;
+    margin-top: 30px; /* Espacio sobre el botón volver */
+    padding-bottom: 20px; /* Espacio debajo */
+}
+
+/* Media Queries para Responsividad (Ejemplo básico) */
 @media (max-width: 768px) {
-    .producto {
-        padding: 8px; /* 20% menos que el último ajuste móvil */
+    .footer-icons {
+        flex-direction: column;
+        gap: 20px;
     }
-    
-    .producto img {
-        height: 140px; /* 12.5% más compacto */
-    }
-    
+
     .productos-grid {
-        gap: 5px; /* Espaciado mínimo entre elementos */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .carrito-item {
+        flex-direction: column;
+        align-items: stretch; /* Estira los elementos */
+    }
+
+    .item-detalles {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn-eliminar {
+        margin-left: 0; /* Quita el margen auto */
+        margin-top: 10px; /* Añade espacio arriba */
+        align-self: flex-end; /* Alinea a la derecha */
+    }
+
+    .carrito-total {
+        text-align: center;
+    }
+
+    .carrito-total h3 {
+        text-align: center;
+    }
+
+    .botones-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-container .productos-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
 
-.form-group {
-    margin-bottom: 20px;
+@media (max-width: 480px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .btn-principal, .btn-submit, .btn-finalizar, .btn-volver, .btn-carrito {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .carrito-icon {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+        font-size: 1.3em;
+    }
 }
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: bold;
-}
-
-.precio {
-    font-weight: bold;
-    color: #8B4513;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-
-.contacto-container {
-    background-image: url('../img/fondo2.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form-group input[type="number"]:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    background-color: #ffd700;
-    color: black;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #ffed4a;
-}
-
-
-/* Estilos para el carrito */
-.producto-acciones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.cantidad-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn-carrito {
-    background-color: #FFD700;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.carrito-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.carrito-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.carrito-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 30px;
-}
-
-.btn-finalizar {
-    background-color: #FFD700;
-    color: black;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
-}
-
-.carrito-vacio {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    padding: 20px;
-}
-
-.item-detalles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-eliminar {
-    background-color: #ff4444;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-volver {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 15px;
-}
-    width: 100%;
-    padding: 40px 20px;
-    background-image: url("../../app1/img/fondonuevo.jpeg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px; /* Espacio horizontal desde bordes */
-    margin: 0 auto;
-}
-
-.productos-page .producto {
-    margin: 10px auto; /* Centrado horizontal en cada celda */
-    padding: 20px;
-    background-color: white;
-    border: 3px solid #000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    width: 90%; /* Ancho relativo para espacio interno */
-}
-
-.productos-page .producto img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-.productos-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
