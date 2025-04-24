@@ -7,14 +7,14 @@
     <div class="galeria-grid">
         <!-- Video de YouTube -->
         <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/_5cpb_WqJXE" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            <iframe
+                src="https://www.youtube.com/embed/_5cpb_WqJXE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </div>
-        
+
         <!-- Galería de colmenas -->
         <div class="galeria-item">
             <img src="{% static 'app1/img/colmena3.jpeg' %}" alt="Colmena 3">
@@ -35,6 +35,7 @@
 </div>
 
 <style>
+/* Es mejor mover estos estilos al archivo CSS principal */
 .galeria-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,7 +43,7 @@
 }
 
 .galeria-grid {
-    display: grid;
+    display: contents;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 20px;
@@ -66,7 +67,7 @@
 
 .video-container iframe {
     width: 100%;
-    height: 350px;
+    height: 350px; /* Considera ajustar la altura también en móviles si es necesario */
 }
 </style>
 
@@ -74,7 +75,9 @@
     <a href="javascript:history.back()" class="btn-volver">Volver</a>
 </div>
 {% endblock %}
-{% for i in 12345678|make_list %}
+
+{# --- INICIO: Contenido duplicado a eliminar --- #}
+{# {% for i in 12345678|make_list %}
 <div class="galeria-item">
     <img src="{% static 'app1/img/colmena'|add:i|add:'.jpg' %}" alt="Colmena {{ i }}">
 </div>
@@ -84,14 +87,14 @@
     <div class="galeria-grid">
         <!-- Video de YouTube -->
         <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/_5cpb_WqJXE" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            <iframe
+                src="https://www.youtube.com/embed/_5cpb_WqJXE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </div>
-        
+
         <!-- Galería de colmenas -->
         <div class="galeria-item">
             <img src="{% static 'app1/img/colmena3.jpeg' %}" alt="Colmena 3">
@@ -116,4 +119,5 @@
     <img src="{% static 'app1/img/colmena'|add:i|add:'.jpg' %}" alt="Colmena {{ i }}">
 </div>
 {% endfor %}
-</div>
+</div> #}
+{# --- FIN: Contenido duplicado a eliminar --- #}

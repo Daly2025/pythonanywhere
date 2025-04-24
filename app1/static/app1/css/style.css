@@ -253,39 +253,45 @@ a:hover {
 /* (Los estilos inline en galeria.html se pueden mover aquí si se prefiere) */
 .galeria-container {
     max-width: 1200px;
-    margin: 20px auto; /* Ajuste del margen */
+    margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente más opaco */
-    border-radius: 10px;
 }
 
 .galeria-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Más adaptable */
-    gap: 20px; /* Espaciado ajustado */
-    padding: 0; /* Quitar padding extra si ya está en container */
+    /* Por defecto, 2 columnas en pantallas grandes */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; /* Aumentado el gap */
+    padding: 20px;
 }
 
 .galeria-item, .video-container {
     overflow: hidden;
     border-radius: 10px;
-    border: 3px solid #8B4513; /* Borde marrón */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    padding: 0; /* Quitar padding interno si no es necesario */
-    background-color: #fff; /* Fondo blanco para cada item */
+    border: 3px solid #000; /* Borde negro más grueso */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+    padding: 10px; /* Añadido padding */
+    background-color: #fff; /* Fondo blanco para contraste */
 }
 
-.galeria-item img, .video-container iframe {
-    display: block; /* Evita espacios extra debajo de la imagen/iframe */
+.galeria-item img {
     width: 100%;
-    height: 300px; /* Altura ajustada */
-    object-fit: cover; /* Para imágenes */
-    border-radius: 7px; /* Redondeo interno ligero */
-    transition: transform 0.3s ease-in-out;
+    height: 350px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 8px; /* Bordes redondeados internos */
+    transition: transform 0.3s; /* Transición suave para hover */
 }
 
 .galeria-item img:hover {
-    transform: scale(1.05); /* Efecto zoom al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.video-container iframe {
+    display: block; /* Asegura que el iframe sea un bloque */
+    width: 100%;
+    height: 350px; /* Altura igual a las imágenes */
+    border: none; /* Quitar borde del iframe si existe */
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 /* Estilos Carrito (carrito.html) */
@@ -486,7 +492,27 @@ a:hover {
     }
 
     .galeria-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr; /* Asegura una sola columna */
+        gap: 15px; /* Reducir el espacio entre elementos */
+        padding: 0; /* Quitar padding del grid para que los items usen todo el ancho del contenedor */
+    }
+
+    .galeria-item, .video-container {
+        /* Puedes mantener el padding interno si quieres un espacio alrededor de la imagen/video dentro del borde */
+        padding: 5px;
+        border-width: 2px; /* Borde más fino en móvil si se desea */
+        grid-template-columns: 1fr; /* Asegura una sola columna */
+    }
+
+    .galeria-item img {
+        width: 100%; /* Asegura que la imagen llene el .galeria-item */
+        height: auto; /* Ajustar altura automáticamente para mantener proporción */
+        /* object-fit: cover; */ /* Puedes quitar o mantener object-fit según prefieras */
+    }
+
+    .video-container iframe {
+        width: 100%; /* Asegura que el video llene el .video-container */
+        height: 250px; /* Altura específica para el video en móvil */
     }
 
     .carrito-item {
