@@ -90,7 +90,7 @@
                 return;
             }
             localStorage.removeItem('carrito');
-            // Redirigir al formulario de contacto en lugar de la página de productos
+            // Redirigir al formulario de contacto
             window.location.href = "{% url 'contacto' %}";
         } catch (error) {
             console.error('Error al finalizar compra:', error);
