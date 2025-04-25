@@ -20,8 +20,12 @@
                 <input type="tel" id="telefono" name="telefono" required>
             </div>
             <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <label for="direccion">Dirección de envío:</label>
+                <textarea id="direccion" name="direccion" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje (opcional):</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
             </div>
             <button type="submit" class="btn-submit">Enviar Mensaje</button>
         </form>
@@ -31,36 +35,51 @@
 </div>
 
 <script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     
-    // Obtener el carrito del localStorage
     const carrito = JSON.parse(localStorage.getItem('carrito') || '[]');
+    console.log('Contenido del carrito:', carrito);
     
-    // Crear FormData con los datos del formulario
-    const formData = new FormData(this);
+    const formData = {
+        nombre: this.querySelector('#nombre').value,
+        email: this.querySelector('#email').value,
+        telefono: this.querySelector('#telefono').value,
+        direccion: this.querySelector('#direccion').value,
+        mensaje: this.querySelector('#mensaje').value,
+        carrito: carrito
+    };
     
-    // Enviar el formulario
-    fetch(window.location.href, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+    console.log('Datos a enviar:', formData);
+    
+    try {
+        const response = await fetch(window.location.href, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+            },
+            body: JSON.stringify(formData)
+        });
+        
+        if (!response.ok) {
+            throw new Error('Error en la respuesta del servidor');
         }
-    })
-    .then(response => {
-        if (response.ok) {
+        
+        const data = await response.json();
+        console.log('Respuesta del servidor:', data);
+        
+        if (data.status === 'success') {
             alert('Gracias por tu pedido. Recibirás un correo con los detalles.');
-            localStorage.removeItem('carrito'); // Limpiar el carrito
+            localStorage.removeItem('carrito');
             window.location.href = "{% url 'home' %}";
         } else {
-            alert('Hubo un error al procesar tu pedido. Por favor, inténtalo de nuevo.');
+            throw new Error(data.message || 'Error desconocido');
         }
-    })
-    .catch(error => {
+    } catch (error) {
         console.error('Error:', error);
         alert('Hubo un error al procesar tu pedido. Por favor, inténtalo de nuevo.');
-    });
+    }
 });
 </script>
 {% endblock %}

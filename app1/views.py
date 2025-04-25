@@ -58,84 +58,64 @@ import json
 import logging
 
 def contacto(request):
-    print("DEBUG: Vista contacto() llamada")
-    print(f"DEBUG: Método de la petición: {request.method}")
-    
     if request.method == 'POST':
         try:
-            print("DEBUG: Procesando POST request")
-            nombre = request.POST.get('nombre')
-            email = request.POST.get('email')
-            telefono = request.POST.get('telefono')
-            mensaje = request.POST.get('mensaje')
+            data = json.loads(request.body)
+            nombre = data.get('nombre')
+            email = data.get('email')
+            telefono = data.get('telefono')
+            direccion = data.get('direccion')
+            mensaje = data.get('mensaje')
+            carrito = data.get('carrito', [])
             
-            print(f"DEBUG: Datos del formulario recibidos:")
-            print(f"Nombre: {nombre}")
-            print(f"Email: {email}")
-            print(f"Teléfono: {telefono}")
-            print(f"Mensaje: {mensaje}")
+            mensaje_pedido = "Gracias por tu pedido. Para el pago del mismo haz un bizum al teléfono 655 85 85 85 y en un plazo de 3 a 5 días lo recibirás en tu domicilio.\n\n"
+            mensaje_pedido += f"Nombre: {nombre}\n"
+            mensaje_pedido += f"Email: {email}\n"
+            mensaje_pedido += f"Teléfono: {telefono}\n"
+            mensaje_pedido += f"Dirección de envío: {direccion}\n\n"
             
-            # Obtener el carrito del localStorage
-            carrito = request.COOKIES.get('carrito', '[]')
-            carrito_items = json.loads(carrito)
-            print(f"DEBUG: Carrito recibido: {carrito_items}")
-            
-            # Crear el mensaje del pedido
-            mensaje_pedido = f"Nuevo pedido de {nombre}\n"
-            mensaje_pedido += f"Teléfono: {telefono}\n\n"
-            mensaje_pedido += "Detalles del pedido:\n"
             total = 0
-            
-            for item in carrito_items:
-                subtotal = float(item['precio']) * int(item['cantidad'])
-                mensaje_pedido += f"- {item['nombre']}: {item['cantidad']} x {item['precio']}€ = {subtotal}€\n"
-                total += subtotal
-            
-            mensaje_pedido += f"\nTotal del pedido: {total}€\n"
-            mensaje_pedido += f"\nMensaje del cliente:\n{mensaje}"
-            
-            # Enviar el correo
-            try:
-                print("DEBUG: Intentando enviar correo...")
-                print(f"De: Mieles.Lydia@gmail.com")
-                print(f"Para: {email}")
-                print(f"Mensaje: {mensaje_pedido}")
+            if carrito:
+                for item in carrito:
+                    precio = float(item.get('precio', 0))
+                    cantidad = int(item.get('cantidad', 0))
+                    subtotal = precio * cantidad
+                    total += subtotal
+                    
+                    mensaje_pedido += f"Producto: {item.get('nombre', '')}\n"
+                    mensaje_pedido += f"Cantidad: {cantidad}\n"
+                    mensaje_pedido += f"Precio unitario: {precio}€\n"
+                    mensaje_pedido += f"Subtotal: {subtotal}€\n"
+                    mensaje_pedido += "-------------------\n"
                 
-                from django.conf import settings
-                print(f"DEBUG: Configuración de correo:")
-                print(f"HOST: {settings.EMAIL_HOST}")
-                print(f"PORT: {settings.EMAIL_PORT}")
-                print(f"TLS: {settings.EMAIL_USE_TLS}")
-                print(f"USER: {settings.EMAIL_HOST_USER}")
-                print(f"PASSWORD LENGTH: {len(settings.EMAIL_HOST_PASSWORD)}")
-                
-                send_mail(
-                    'Confirmación de pedido - Colmenar do Castelo',
-                    mensaje_pedido,
-                    'Mieles.Lydia@gmail.com',
-                    [email, 'Mieles.Lydia@gmail.com'],
-                    fail_silently=False,
-                )
-                print("DEBUG: ¡Correo enviado con éxito!")
-            except Exception as e:
-                import traceback
-                print(f"DEBUG: Error al enviar el correo: {str(e)}")
-                print(f"DEBUG: Tipo de error: {type(e)}")
-                print(f"DEBUG: Traceback completo:")
-                print(traceback.format_exc())
-                raise  # Re-raise the exception to see it in the response
+                mensaje_pedido += f"\nTotal del pedido: {total}€\n"
+                mensaje_pedido += "==================\n"
             
-            # Limpiar el carrito después de enviar el correo
-            response = redirect('home')
-            response.delete_cookie('carrito')
-            messages.success(request, '¡Gracias por tu pedido! Te hemos enviado un correo de confirmación.')
-            return response
+            if mensaje:
+                mensaje_pedido += f"\nMensaje adicional:\n{mensaje}\n"
+            
+            mensaje_pedido += "\n\n"
+            mensaje_pedido += "Carretera de Verín 22\n"
+            mensaje_pedido += "32619 Verín, Ourense\n"
+            mensaje_pedido += "Teléfono: 655 85 85 85\n\n"
+            mensaje_pedido += """
+                 🐝 
+    COLMENAR DO CASTELO
+         Miel Artesanal
+            """
+            
+            send_mail(
+                'Nuevo pedido - Colmenar do Castelo',
+                mensaje_pedido,
+                'Mieles.Lydia@gmail.com',
+                [email, 'Mieles.Lydia@gmail.com'],
+                fail_silently=False,
+            )
+            
+            return JsonResponse({'status': 'success'})
             
         except Exception as e:
-            logging.error(f"Error al enviar el correo: {str(e)}")
-            messages.error(request, 'Hubo un error al procesar tu pedido. Por favor, inténtalo de nuevo.')
-            return render(request, 'app1/contacto.html')
+            print(f"Error: {str(e)}")
+            return JsonResponse({'status': 'error', 'message': str(e)})
     
     return render(request, 'app1/contacto.html')
-
-# Eliminar las funciones duplicadas contacto() y enviar_confirmacion()
